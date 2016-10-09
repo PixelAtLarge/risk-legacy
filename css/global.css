@@ -2,16 +2,16 @@
 Color Guide
 ************************************/
 /*
+blue: #0F4C5C
+Enclave: #69793E
+Imperial: #6D4168
+Khan: #514A47
+Mech: #BA4745
+orange: #E36414
+parchment: #F1F1D4
 purple: #5F0F40
 red: #9A031E
-orange: #E36414
-blue: #0F4C5C
-parchment: #F1F1D4
-Enclave: #69793E
 Saharan: #FB8B24
-Mech: #BA4745
-Khan: #514A47
-Imperial: #6D4168
 */
 
 @font-face {
@@ -39,11 +39,11 @@ header {
 }
 
 header h1 {
-  font-family: 'Risk Header', serif;
   color: #9A031E;
+  font-family: 'Risk Header', serif;
+  font-size: 300%;
   margin: 0;
   padding: 0;
-  font-size: 300%;
 }
 
 header ul {
@@ -55,42 +55,39 @@ header ul {
 header ul li{
   display: inline-block;
   float: left;
-  margin-top: 1em;
   margin-bottom: 1em;
   margin-right: 1em;
+  margin-top: 1em;
 
 }
 header ul li a, header ul li a:visited{
-  color: #FFB877;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  display: inline-block;
-  width: 10em;
   background-color: #5F0F40;
-  padding: .5em;
+  border-radius: 1em;
   -webkit-border-radius: 1em;
   -moz-border-radius: 1em;
-  border-radius: 1em;
+  color: #FFB877;
+  display: inline-block;
+  padding: .5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   transition: background-color .25s ease;
+  width: 10em;
 }
 
 
 header ul li a:hover{
-  color: #5F0F40;
   background-color: #E36414;
-
+  color: #5F0F40;
 }
 
 header ul li a:active{
   color: #FB8B24;
-
 }
 
 section {
-  clear:both;
+  clear: both;
 }
-
 
 .legacy {
   font-family: 'Legacy', cursive;
@@ -100,8 +97,8 @@ section {
 
 .content {
   margin: 0 auto;
-  width: 95%;
   max-width: 75em;
+  width: 95%;
 }
 
 .map {
@@ -109,31 +106,29 @@ section {
 }
 
 .map svg{
-  width: 100%;
   border: 5px solid #0F4C5C;
   display: block;
   vertical-align: top;
-
+  width: 100%;
 }
 
 .rules h3 {
-  width: 80%;
-  min-width: 600px;
   margin: 10px auto;
-
+  min-width: 600px;
+  width: 80%;
 }
 
 .rules table{
   background-color: #FB8B24;
-  width: 80%;
-  min-width: 600px;
-  text-align: left;
-  margin: 10px auto 10px auto;
-  padding: 3px;
   color: #F1F1D4;
   font-size: 120%;
-
+  margin: 10px auto 10px auto;
+  min-width: 600px;
+  padding: 3px;
+  text-align: left;
+  width: 80%;
 }
+
 .rules table tr {
   background-color: #5F0F40;
 }
@@ -141,23 +136,23 @@ section {
 .rules table .troops{
   background-color: #9A031E;
 }
+
 .rules table th {
   padding: 5px;
 }
 
 .rules table td {
-  text-align: right;
   padding: 5px;
+  text-align: right;
 }
-
 
 /************************************
 Map
 ************************************/
 
 svg text{
-  font-family: 'Risk Header', serif;
   fill: #0F4C5C;
+  font-family: 'Risk Header', serif;
   font-size: 200%;
   text-anchor: middle;
 }
@@ -172,60 +167,54 @@ svg text{
 
 .connector, .line{
   fill: none;
-  stroke:#000000;
-
+  stroke: #000;
 }
 
 #winners text {
+  fill: #000;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  fill: #000000;
   font-size: 70%;
   text-anchor: start;
 }
 
 #winners .title {
-  font-size: 100%;
   fill: #0F4C5C;
+  font-size: 100%;
 }
+
 .st2 {
   stroke-miterlimit:10;
 }
 
 .africa path {
-  fill:#685A4B;
-  stroke:#000000;
+  fill: #685A4B;
+  stroke: #000;
 }
 
 .asia path {
-  fill:#519B2A;
- stroke:#000000;
+  fill: #519B2A;
+  stroke: #000;
 }
 
-
 .europe path {
-  fill:#1D72D8;
-  stroke:#000000;
+  fill: #1D72D8;
+  stroke: #000;
 }
 
 .north-america path {
-  fill:#CCAC00;
-  stroke:#000000;
+  fill: #CCAC00;
+  stroke: #000;
 }
-
 
 .south-america path, .south-america polygon {
-  fill:#ED7321;
-  stroke:#000000;
+  fill: #ED7321;
+  stroke: #000;
 }
-
 
 .australia path {
-  fill:#84475A;
-  stroke:#000000;
+  fill: #84475A;
+  stroke: #000;
 }
-
-
-
 
 /************************************
 Factions
@@ -236,9 +225,9 @@ Factions
 }
 
 .faction {
-  padding: 0 0 .5em 1em;
+  color: #000;
   margin-top: 3em;
-  color: #000000;
+  padding: 0 0 .5em 1em;
 }
 
 .flavor {
@@ -247,16 +236,16 @@ Factions
 }
 
 .power {
-  width: 100%;
   background-color: #CCCCCC;
   border: 2px solid #424242;
-  padding: .5em;
   min-height: 3em;
+  padding: .5em;
+  width: 100%;
 }
 
 .level1 {
-  border-color: #33cc33;
   background-color: #aaff80;
+  border-color: #33cc33;
 }
 
 .die-mech{
@@ -265,7 +254,6 @@ Factions
 
 .saharan {
   border-left: 15px solid #FB8B24;
-
 }
 
 .khan {
@@ -285,24 +273,25 @@ Enter Data
 ************************************/
 
 input, textarea, select, button, label {
-  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
   -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-          box-sizing: border-box;
+  margin: 0;
 }
 
 .form-content{
   width: 100%;
 }
+
 .form-entry {
-  width: 65%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
+  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
+  color: #000;
   margin: 2em 0;
   min-width: calc(35em * .4);
   padding: 1em;
-  color: #000;
-  -webkit-box-sizing: border-box; /* For legacy WebKit based browsers */
-     -moz-box-sizing: border-box; /* For legacy (Firefox <29) Gecko based browsers */
-          box-sizing: border-box;
+  width: 65%;
 }
 
 .form-entry h2, .form-entry h3 {
@@ -316,9 +305,8 @@ input, textarea, select, button, label {
 
 .form-entry ul {
   list-style: none;
-  text-align: left;
   padding: 0;
-
+  text-align: left;
 }
 
 .form-entry li {
@@ -326,18 +314,17 @@ input, textarea, select, button, label {
 }
 
 .form-entry input[type="submit"]{
-  margin: 2em 0;
   display: block;
+  margin: 2em 0;
 }
 
 .form-entry input[type="text"] {
   font-size: 1em;
 }
 
-
 .current-play {
-  border: 2px solid #5F0F40;
   background-color: rgba(95, 15, 64, .2);
+  border: 2px solid #5F0F40;
 }
 
 .current-play h2 {
@@ -345,8 +332,8 @@ input, textarea, select, button, label {
 }
 
 .start-of-play {
-  border: 2px solid #0F4C5C;
   background-color: rgba(15, 76, 92, .2);
+  border: 2px solid #0F4C5C;
 }
 
 .start-of-play h2 {
@@ -354,8 +341,8 @@ input, textarea, select, button, label {
 }
 
 .ongoing-play {
-  border: 2px solid #E36414;
   background-color: rgba(227, 100, 20, .2);
+  border: 2px solid #E36414;
 }
 
 .ongoing-play h2 {
